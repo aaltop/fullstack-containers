@@ -1,0 +1,53 @@
+Script started on 2025-01-13 16:38:22+02:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="120" LINES="30"]
+]0;aaltonen@LAPTOP-RRRVQ70K: .../script-answers[01;32maaltonen@LAPTOP-RRRVQ70K[00m:[01;34m.../script-answers[00m$ dco[K[Kocker container run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+
+[1A[2Kc1ec31eb5944: Pulling fs layer [1B[1A[2Kc1ec31eb5944: Download complete [1BDigest: sha256:5b3cc85e16e3058003c13b7821318369dad01dac3dbb877aac3c28182255c724
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+]0;aaltonen@LAPTOP-RRRVQ70K: .../script-answers[01;32maaltonen@LAPTOP-RRRVQ70K[00m:[01;34m.../script-answers[00m$ docker run -it ubnut[K[K[Kuntu bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2Kde44b265507a: Pulling fs layer [1B[1A[2Kde44b265507a: Downloading [=>                                                 ]  1.049MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=>                                                 ]  1.049MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [===>                                               ]  2.097MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [===>                                               ]  2.097MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=====>                                             ]  3.146MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=======>                                           ]  4.194MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=======>                                           ]  4.194MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [========>                                          ]  5.243MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [========>                                          ]  5.243MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [==========>                                        ]  6.291MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [============>                                      ]   7.34MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [============>                                      ]   7.34MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [==============>                                    ]  8.389MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [==============>                                    ]  8.389MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [===============>                                   ]  9.437MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=================>                                 ]  10.49MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=================>                                 ]  10.49MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [===================>                               ]  11.53MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=====================>                             ]   12.5MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=====================>                             ]  12.58MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=====================>                             ]  12.58MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=====================>                             ]  12.58MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [======================>                            ]  13.63MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [========================>                          ]  14.68MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [==========================>                        ]  15.73MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [==========================>                        ]  15.73MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [============================>                      ]  16.78MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [============================>                      ]  16.78MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=============================>                     ]  17.83MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [===============================>                   ]  18.87MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [===============================>                   ]  18.87MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=================================>                 ]  19.92MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=================================>                 ]  19.92MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [===================================>               ]  20.97MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [===================================>               ]  21.32MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=====================================>             ]  22.02MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [======================================>            ]  23.07MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [======================================>            ]  23.07MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [========================================>          ]  24.12MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [========================================>          ]  24.12MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [==========================================>        ]  25.17MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [============================================>      ]  26.21MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [============================================>      ]  26.21MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=============================================>     ]  27.26MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [=============================================>     ]  27.26MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [===============================================>   ]  28.31MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [===============================================>   ]  28.31MB/29.75MB[1B[1A[2Kde44b265507a: Downloading [==================================================>]  29.75MB/29.75MB[1B[1A[2Kde44b265507a: Download complete [1BDigest: sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@0ca97f66864a: /root@0ca97f66864a:/# ls
+[?2004l[0m[01;36mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;36mlib64[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;36msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+[?2004h]0;root@0ca97f66864a: /root@0ca97f66864a:/# cd usr
+[?2004l[?2004h]0;root@0ca97f66864a: /usrroot@0ca97f66864a:/usr# ls
+[?2004l[0m[01;34mbin[0m  [01;34mgames[0m  [01;34minclude[0m  [01;34mlib[0m  [01;34mlib64[0m  [01;34mlibexec[0m  [01;34mlocal[0m  [01;34msbin[0m  [01;34mshare[0m  [01;34msrc[0m
+[?2004h]0;root@0ca97f66864a: /usrroot@0ca97f66864a:/usr# cd src
+[?2004l[?2004h]0;root@0ca97f66864a: /usr/srcroot@0ca97f66864a:/usr/src# ls
+[?2004l[?2004h]0;root@0ca97f66864a: /usr/srcroot@0ca97f66864a:/usr/src# mkdir app
+[?2004l[?2004h]0;root@0ca97f66864a: /usr/srcroot@0ca97f66864a:/usr/src# cd app
+[?2004l[?2004h]0;root@0ca97f66864a: /usr/src/approot@0ca97f66864a:/usr/src/app# l touch inde. x.js
+[?2004l[?2004h]0;root@0ca97f66864a: /usr/src/approot@0ca97f66864a:/usr/src/app# ls
+[?2004lindex.js
+[?2004h]0;root@0ca97f66864a: /usr/src/approot@0ca97f66864a:/usr/src/app# exit
+[?2004lexit
+]0;aaltonen@LAPTOP-RRRVQ70K: .../script-answers[01;32maaltonen@LAPTOP-RRRVQ70K[00m:[01;34m.../script-answers[00m$ exit
+exit
+
+Script done on 2025-01-13 16:41:21+02:00 [COMMAND_EXIT_CODE="0"]
