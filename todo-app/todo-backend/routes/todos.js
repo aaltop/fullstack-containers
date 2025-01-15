@@ -1,5 +1,6 @@
 const express = require('express');
 const { Todo } = require('../mongo')
+const { incrementTodosNum } = require("../redis/todos")
 const router = express.Router();
 
 /* GET todos listing. */
@@ -15,6 +16,8 @@ router.post('/', async (req, res) => {
     done: false
   })
   res.send(todo);
+
+  await incrementTodosNum();
 });
 
 const singleRouter = express.Router();
