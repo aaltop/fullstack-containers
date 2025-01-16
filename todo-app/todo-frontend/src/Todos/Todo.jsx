@@ -1,13 +1,13 @@
 
 
 
-export default function Todo({ todo, onDelete, onComplete})
+export default function Todo({ todo, onDelete, onComplete })
 {
     const doneInfo = (
         <>
           <span>This todo is done</span>
           <span>
-            <button onClick={onDelete(todo)}> Delete </button>
+            <button onClick={() => onDelete(todo)}> Delete </button>
           </span>
         </>
       )
@@ -18,8 +18,8 @@ export default function Todo({ todo, onDelete, onComplete})
             This todo is not done
           </span>
           <span>
-            <button onClick={onDelete(todo)}> Delete </button>
-            <button onClick={onComplete(todo)}> Set as done </button>
+            <button onClick={() => onDelete(todo)}> Delete </button>
+            <button onClick={() => onComplete(todo)}> Set as done </button>
           </span>
         </>
       )
