@@ -1,0 +1,18 @@
+services:
+  app:
+    environment:
+      - VITE_BACKEND_URL=http://localhost:3000/
+    # built with ./todo-frontend/dev.Dockerfile
+    image: todo-frontend-dev:latest
+    volumes:
+      - ./todo-frontend/src/:/usr/src/app/src/
+
+  nginx:
+    image: nginx:1.27.3
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 8080:80
+    container_name: reverse-proxy
+    depends_on:
+      - app
