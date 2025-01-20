@@ -1,7 +1,10 @@
 services:
+
   mongo:
     # create this image using the ./mongo/Dockerfile
     image: initialised-mongo
+    build:
+      context: ./mongo/
     ports:
       - 3456:27017
     environment:
@@ -10,6 +13,7 @@ services:
       MONGO_INITDB_DATABASE: the_database
     volumes:
       - mongo-data:/data/db
+
   redis:
     image: redis
     ports:
@@ -17,6 +21,26 @@ services:
     command: ["redis-server", "--appendonly", "yes"]
     volumes:
       - redis-data:/data
+
+  todo-backend-dev:
+    environment:
+      - 'MONGO_URL=mongodb://the_username:the_password@mongo:27017/the_database'
+      - 'REDIS_URL=redis://redis:6379'
+    depends_on:
+      redis:
+        condition: service_started
+      mongo:
+        condition: service_started
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./mongo/:/usr/src/app/mongo/
+      - ./redis/:/usr/src/app/redis/
+      - ./routes/:/usr/src/app/routes/
+      - ./util/:/usr/src/app/util/
+    ports:
+      - 3000:3000
 
 
 volumes:

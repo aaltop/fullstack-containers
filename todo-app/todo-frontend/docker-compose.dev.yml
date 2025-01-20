@@ -1,5 +1,7 @@
 services:
   app:
+    environment:
+      - VITE_BACKEND_URL=http://localhost:3000/
     image: todo-frontend-dev
     build:
       context: . # The context will pick this directory as the "build context"
