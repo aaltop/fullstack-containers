@@ -31,6 +31,7 @@ services:
         condition: service_started
       mongo:
         condition: service_started
+    image: todo-backend-dev
     build:
       context: .
       dockerfile: dev.Dockerfile
