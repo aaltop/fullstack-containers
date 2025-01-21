@@ -1,13 +1,14 @@
 # The first FROM is now a stage called build-stage
-FROM node:20 AS build-stage 
+FROM node:20 AS build-stage
 
-ENV VITE_BACKEND_URL="http://localhost:3000/"
+# NOTE: currently only usable with top-level docker compose and reverse proxy
+ENV VITE_BACKEND_URL="http://localhost:8080/api/"
 
 WORKDIR /usr/src/app
 
 COPY . .
 
-RUN npm ci
+RUN npm install
 
 RUN npm run test
 
