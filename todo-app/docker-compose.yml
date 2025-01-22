@@ -3,8 +3,6 @@ services:
     image: todo-frontend
     build:
       context: ./todo-frontend/
-    volumes:
-      - ./todo-frontend/src/:/usr/src/app/src/
 
   mongo:
     # create this image using the ./todo-backend/mongo/Dockerfile
@@ -36,11 +34,6 @@ services:
     image: todo-backend
     build:
       context: ./todo-backend/
-    volumes:
-      - ./todo-backend/mongo/:/usr/src/app/mongo/
-      - ./todo-backend/redis/:/usr/src/app/redis/
-      - ./todo-backend/routes/:/usr/src/app/routes/
-      - ./todo-backend/util/:/usr/src/app/util/
 
   nginx:
     image: nginx:1.27.3
